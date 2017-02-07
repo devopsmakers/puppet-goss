@@ -1,0 +1,33 @@
+{
+  "name": "puppet-goss",
+  "version": "0.1.0",
+  "author": "pysysops",
+  "summary": "Install and manage Goss server validation",
+  "license": "Apache-2.0",
+  "source": "https://github.com/devopsmakers/puppet-goss",
+  "project_page": "https://github.com/devopsmakers/puppet-goss",
+  "issues_url": "https://github.com/devopsmakers/puppet-goss/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
