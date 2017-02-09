@@ -1,3 +1,9 @@
+begin
+ require 'psych'
+rescue ::LoadError
+end
+require 'yaml'
+
 require 'rubygems'
 require 'bundler/setup'
 

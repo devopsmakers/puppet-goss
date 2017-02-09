@@ -12,7 +12,7 @@
 #
 # * `timeout`
 #   Milliseconds after which the test will fail.
-#   Default: 500
+#   Default: undef
 #
 # Example usage:
 #
@@ -30,15 +30,13 @@
 #
 define goss::test::addr(
   $reachable = true,
-  $timeout   = 500,
+  $timeout   = undef,
 ) {
-  $target = $name
-
   datacat_fragment { "goss_addr_${name}":
     target => '/etc/goss/config.yaml',
     data   => {
       addr => {
-        $target => {
+        $name => {
           reachable => $reachable,
           timeout   => $timeout,
         }
