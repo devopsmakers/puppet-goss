@@ -31,7 +31,7 @@
 #   timeout     => 1000,
 # }
 #
-define goss::test::command(
+define goss::test::dns (
   $resolveable = true,
   $addrs       = undef,
   $timeout     = undef,
@@ -44,8 +44,8 @@ define goss::test::command(
           resolveable => $resolveable,
           addrs       => $addrs,
           timeout     => $timeout,
-        }
-      }
-    }
+        },
+      },
+    },
   }
 }

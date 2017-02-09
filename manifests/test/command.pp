@@ -32,7 +32,7 @@
 #   timeout     => 1000,
 # }
 #
-define goss::test::command(
+define goss::test::command (
   $exit_status = 0,
   $stdout      = undef,
   $stderr      = undef,
@@ -47,8 +47,8 @@ define goss::test::command(
           stdout      => $stdout,
           stderr      => $stderr,
           timeout     => $timeout,
-        }
-      }
-    }
+        },
+      },
+    },
   }
 }

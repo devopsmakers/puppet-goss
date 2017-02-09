@@ -15,7 +15,7 @@ class goss::config {
     template => 'goss/etc/goss/config.yaml.erb',
     owner    => 'root',
     group    => 'root',
-    mode     => '0644'
+    mode     => '0644',
   }
 
 }

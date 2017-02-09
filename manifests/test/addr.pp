@@ -28,7 +28,7 @@
 #   timeout   => 1000,
 # }
 #
-define goss::test::addr(
+define goss::test::addr (
   $reachable = true,
   $timeout   = undef,
 ) {
@@ -39,8 +39,8 @@ define goss::test::addr(
         $name => {
           reachable => $reachable,
           timeout   => $timeout,
-        }
-      }
-    }
+        },
+      },
+    },
   }
 }
